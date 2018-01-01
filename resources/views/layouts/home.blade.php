@@ -86,10 +86,6 @@
                     <a href="#">
                         <i class="fa fa-dashboard"></i> <span>داشبورد</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
-                    <ul class="treeview-menu">
-                        <li class="active"><a href="{{url('/')}}"><i class="fa fa-circle-o"></i> داشبورد </a></li>
-                        <li class="active"><a href="{{url('packet')}}"><i class="fa fa-circle-o"></i> پکت ها </a></li>
-                    </ul>
                 </li>
                 <li><a href="{{url('logout')}}"><i class="fa fa-circle-o text-red"></i> <span>خروج</span></a></li>
 

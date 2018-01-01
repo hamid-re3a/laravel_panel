@@ -14,6 +14,6 @@ Route::auth();
 
 Route::get('/','DashboardController@index');
 
-Route::match(['post','get'],'packet', 'DashboardController@showPacket');
-Route::get('packet/show/{id}', 'DashboardController@showXml');
-Route::match(['post','get'],'filter','DashboardController@filterPacket');
+Route::get('json', function(){
+    return json_encode(['کاربران'=>40,'کارگران' => 90, 'مدیران'=>30,'مدیران میانی'=>70,'مدیران ارشد'=>10,'شرکت کنندگان'=>100],true);
+});
