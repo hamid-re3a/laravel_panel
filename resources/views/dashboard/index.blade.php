@@ -27,22 +27,7 @@
             <!-- /.row -->
             <!-- Main row -->
             <div class="row">
-                <!-- ./col -->
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-green">
-                        <div class="inner">
-                            <h3>{{$count}}</h3>
 
-                            <p>تعداد کل نتایج</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- ./col -->
                 <!-- Left col -->
                 <section class="col-lg-9 connectedSortable">
                     <!-- DONUT CHART -->
@@ -86,7 +71,22 @@
                 </section>
                 <!-- /.Left col -->
                 <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3>{{$count}}</h3>
 
+                            <p>تعداد کل نتایج</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ./col -->
                 <!-- right col -->
             </div>
             <!-- /.row (main row) -->

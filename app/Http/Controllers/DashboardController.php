@@ -32,4 +32,15 @@ class DashboardController extends Controller
         
     }
 
+    public function users(){
+        $data['get_result'] = [];
+        // Get request to fetch json response
+        $get_result = @file_get_contents('http://localhost/laravel/public/people');
+        // Make json object from result
+        $people_result = json_decode($get_result,true);
+
+        return view('dashboard.people',compact('people_result'));
+
+    }
+
 }

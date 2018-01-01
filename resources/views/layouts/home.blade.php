@@ -82,9 +82,14 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">منو اصلی</li>
-                <li class="active treeview">
-                    <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>داشبورد</span> <i class="fa fa-angle-left pull-right"></i>
+                <li class="{{(Request::url() == url('/') ? 'active':'')}}">
+                    <a href="{{url('/')}}">
+                        <i class="fa fa-dashboard"></i> <span>داشبورد</span>
+                    </a>
+                </li>
+                <li class="{{(Request::url() == url('users') ? 'active':'')}}">
+                    <a href="{{url('users')}}">
+                        <i class="fa fa-user"></i> <span>اشخاص</span>
                     </a>
                 </li>
                 <li><a href="{{url('logout')}}"><i class="fa fa-circle-o text-red"></i> <span>خروج</span></a></li>
@@ -98,7 +103,7 @@
     @yield('content')
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2015 </strong> All rights
+        <strong>Copyright &copy; {{date('Y',time())}} </strong> All rights
         reserved.
     </footer>
 
